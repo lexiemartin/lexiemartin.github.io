@@ -50,6 +50,7 @@ a {
 .jumbotron {
 	background-color: #90A67B;
 	padding: 2em;
+	z-index: 1;
 }
 
 .jumbotron h1 {
@@ -67,8 +68,9 @@ a {
 
 
 .breadcrumb {
-	background-color: #C6CCA0;
-	border-radius: 0px;
+	background-color: #B6CCA0;
+	border-radius: 5px;
+	z-index: 1;
 }
 
 .breadcrumb > li + li:before {
@@ -84,12 +86,26 @@ a {
 	color: #606B4D;
 }
 
+.myPanel {
+	background-color: #D1E5C2;
+	margin-bottom: 30px;
+	padding: 30px;
+	border-radius: 5px;
+	z-index: 1;
+}
+
 </style>
 </head>
 
 <body>
 <div class="container">
+	<!-- Everything goes in the container -->
 	<div class="jumbotron"><h1>Marcia Reid Martin & Associates LLC</h1></div>
+
+	<div class="myPanel">
+		O HAI
+	</div>
+
 	<ul class="breadcrumb">
 		  <li class="active">Home</li>
 		  <li><a href="#">Intellectual Property</a></li>
@@ -98,6 +114,7 @@ a {
 		  <li><a href="#">Messaging</a></li>
 		  <li><a href="#">Company</a></li>
 	</ul>
+	<!-- Container is over! -->
 </div>
 
 </body>
